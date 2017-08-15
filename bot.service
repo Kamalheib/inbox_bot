@@ -1,0 +1,10 @@
+[Unit]
+Description=Inbox bot
+After=multi-user.target
+
+[Service]
+Type=idle
+ExecStart=/usr/bin/python /work/github/inbox_bot/bot.py -t /work/github/inbox_bot/TOKEN
+
+[Install]
+WantedBy=multi-user.target
